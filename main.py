@@ -9,8 +9,6 @@ wb = openpyxl.load_workbook('base.xlsx')
 # grab the active worksheet
 ws = wb.active
 
-# 2102854860:AAFsEmBA0YXlFMr5Y5YOjn0gM1X6biGWhKU Token
-
 # important variables and list
 sheet = wb.active
 max_row = sheet.max_row
@@ -29,7 +27,7 @@ print(names_list)
 print(max_col)
 
 # bot token
-bot = telebot.TeleBot('2102854860:AAFsEmBA0YXlFMr5Y5YOjn0gM1X6biGWhKU')
+bot = telebot.TeleBot('TOKEN')
 
 
 @bot.message_handler(commands=['start'])
